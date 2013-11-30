@@ -1,13 +1,13 @@
-###########################
-# Compiles threefish_demo #
-###########################
+#################################
+# Compiles threefish_skein_demo #
+#################################
 CC=g++ -std=c++0x
 CFLAGS=-O0 -g -Wall -Wextra
 LPATHS=-Llib/
 LDFLAGS=-lskein3fish
-SOURCES=threefish_demo.cpp
+SOURCES=threefish_skein_demo.cpp
 OBJECTS=$(SOURCES:.cpp=.o)
-BINARY=threefish_demo
+BINARY=threefish_skein_demo
 
 all: $(BINARY) $(OBJECTS)
 .cpp.o:
